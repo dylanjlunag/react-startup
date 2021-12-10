@@ -28,6 +28,15 @@ module.exports.commonConfig = {
               modules: {
                 auto: true,
                 localIdentName: '[folder]_[local]__[hash:base64:5]'
+              },
+              importLoaders: 1
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: ['postcss-preset-env']
               }
             }
           },
