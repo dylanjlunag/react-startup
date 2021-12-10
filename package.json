@@ -1,8 +1,16 @@
 {
-  "name": "startup",
+  "name": "react-startup",
   "version": "1.0.0",
-  "description": "Startup project template",
+  "description": "Plantilla para desarrollo frontend con React",
   "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jahirgarcia/react-startup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jahirgarcia/react-startup/issues"
+  },
+  "license": "MIT",
   "scripts": {
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
