@@ -11,6 +11,7 @@
     "url": "https://github.com/jahirgarcia/react-startup/issues"
   },
   "license": "MIT",
+  "homepage": "https://github.com/jahirgarcia/react-startup#readme",
   "scripts": {
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
