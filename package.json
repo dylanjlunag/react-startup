@@ -14,8 +14,9 @@
   "homepage": "https://github.com/dylanjlunag/react-startup#readme",
   "scripts": {
     "lint": "eslint src",
-    "lint:fix": "eslint --fix src",
     "lint:staged": "lint-staged",
+    "lint:fix": "eslint --fix src",
+    "format": "prettier --write src",
     "prepare": "husky install",
     "start": "cross-env-shell NODE_ENV=development webpack serve --config webpack.dev.js",
     "build": "cross-env-shell NODE_ENV=production webpack --config webpack.prod.js"
@@ -32,7 +33,6 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
     "html-webpack-plugin": "^5.5.0",

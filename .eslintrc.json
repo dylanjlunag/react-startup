@@ -16,10 +16,11 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "prettier"],
+  "plugins": ["react"],
   "rules": {
+    "curly": ["error", "all"],
+    "no-mixed-operators": "error",
     "comma-dangle": ["error", "never"],
-    "prettier/prettier": "error",
     "react/jsx-filename-extension": [
       1,
       {
