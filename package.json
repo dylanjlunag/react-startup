@@ -5,13 +5,13 @@
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jahirgarcia/react-startup.git"
+    "url": "https://github.com/dylanjlunag/react-startup.git"
   },
   "bugs": {
-    "url": "https://github.com/jahirgarcia/react-startup/issues"
+    "url": "https://github.com/dylanjlunag/react-startup/issues"
   },
   "license": "MIT",
-  "homepage": "https://github.com/jahirgarcia/react-startup#readme",
+  "homepage": "https://github.com/dylanjlunag/react-startup#readme",
   "scripts": {
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
