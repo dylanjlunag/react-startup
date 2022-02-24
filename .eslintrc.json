@@ -1,7 +1,8 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "jest/globals": true
   },
   "extends": ["airbnb", "airbnb/hooks", "plugin:react/jsx-runtime", "prettier"],
   "parserOptions": {
@@ -11,6 +12,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
+  "plugins": ["jest"],
   "rules": {
     "curly": ["error", "all"],
     "no-mixed-operators": "error",
@@ -25,7 +27,7 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": ["webpack.*.js"]
+        "devDependencies": ["webpack.*.js", "**/setupTests.js", "**/*.test.{js,jsx}"]
       }
     ]
   }
