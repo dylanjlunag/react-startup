@@ -1,17 +1,24 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports.commonConfig = {
-  entry: './src/index.js',
+  entry: './src/index.tsx',
   output: {
     clean: true,
     publicPath: '/',
     filename: 'static/js/[name].[contenthash].js'
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx', '.ts', '.tsx']
   },
   module: {
     rules: [
+      {
+        test: /\.tsx?$/i,
+        exclude: /node_modules/,
+        use: {
+          loader: 'ts-loader'
+        }
+      },
       {
         test: /\.jsx?$/i,
         exclude: /node_modules/,
